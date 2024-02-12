@@ -1,0 +1,28 @@
+/home/fs02/pmr82_0001/rg727/CALFEWS-main/.venv_conda_calfews/lib64/python3.6/site-packages/numpy/core/fromnumeric.py:3373: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/home/fs02/pmr82_0001/rg727/CALFEWS-main/.venv_conda_calfews/lib64/python3.6/site-packages/numpy/core/_methods.py:170: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+run_main_cy.py:71: RuntimeWarning: divide by zero encountered in double_scalars
+  a = main_cy_obj.run_sim_py(start_time)
+run_main_cy.py:71: RuntimeWarning: invalid value encountered in double_scalars
+  a = main_cy_obj.run_sim_py(start_time)
+Traceback (most recent call last):
+  File "/home/fs02/pmr82_0001/rg727/CALFEWS-main/.venv_conda_calfews/lib64/python3.6/site-packages/pandas/core/indexes/base.py", line 2898, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas/_libs/index.pyx", line 70, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 96, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 126, in pandas._libs.index.IndexEngine._get_loc_duplicates
+  File "pandas/_libs/index.pyx", line 133, in pandas._libs.index.IndexEngine._maybe_get_bool_indexer
+  File "pandas/_libs/index.pyx", line 150, in pandas._libs.index.IndexEngine._unpack_bool_indexer
+KeyError: 'swpdelta_contract'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "jupyter_notebook_commands.py", line 98, in <module>
+    ax.plot(datDaily['swpdelta_contract'], label='SWP Table A')
+  File "/home/fs02/pmr82_0001/rg727/CALFEWS-main/.venv_conda_calfews/lib64/python3.6/site-packages/pandas/core/frame.py", line 2906, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/fs02/pmr82_0001/rg727/CALFEWS-main/.venv_conda_calfews/lib64/python3.6/site-packages/pandas/core/indexes/base.py", line 2900, in get_loc
+    raise KeyError(key) from err
+KeyError: 'swpdelta_contract'
